@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ form.instance.pk|yesno:"Edit,Add" }} Inventory Item{% endblock %}
+
+{% block content %}
+    <h1>{{ form.instance.pk|yesno:"Edit,Add" }} Inventory Item</h1>
+    <form method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            {{ form.as_p }}
+        </div>
+        <button type="submit" class="btn btn-success">Save</button>
+        <a href="{% url 'inventory_list' %}" class="btn btn-secondary">Cancel</a>
+    </form>
+{% endblock %}

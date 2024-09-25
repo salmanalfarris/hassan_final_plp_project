@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <div class="jumbotron">
+        <h1 class="display-4">Welcome to Empower MSMEs</h1>
+        <p class="lead">Your one-stop solution for managing your business efficiently.</p>
+        <hr class="my-4">
+        <p>Get started by exploring our inventory management and sales processing tools.</p>
+        <a class="btn btn-primary btn-lg" href="{% url 'inventory_list' %}" role="button">View Inventory</a>
+    </div>
+{% endblock %}

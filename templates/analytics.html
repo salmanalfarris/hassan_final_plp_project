@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Analytics{% endblock %}
+
+{% block content %}
+    <h1>Business Analytics</h1>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Total Sales: ${{ total_sales }}</h5>
+            <p class="card-text">Total Revenue: ${{ total_revenue }}</p>
+            <p class="card-text">Top Selling Product: {{ top_product.name }}</p>
+        </div>
+    </div>
+    <div id="chart-container" class="mt-4">
+        <!-- Placeholder for charts (e.g., sales trends) -->
+    </div>
+{% endblock %}
