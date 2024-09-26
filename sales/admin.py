@@ -9,3 +9,7 @@ class OrderAdmin(admin.ModelAdmin):
 
 admin.site.register(Customer)
 admin.site.register(Order, OrderAdmin)
+
+# #Login credentials to my django admin super user account
+# Username: Salmanalfarris
+# Password: H3491675846h@
